@@ -1,0 +1,12 @@
+class CibilInstall::cibilinst{
+    package{'openacc':
+	ensure => present,
+	provider => yum, 
+	}
+    package{'google-chrome-stable':
+	ensure => present,
+	}
+    package{'cmake':
+	ensure => present,
+	}
+}
